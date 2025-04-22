@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Balamurali Nambiar (bala) - AI, Python and Technology Developer - Explore the latest projects and contributions from Balamurali Nambiar">
+    <meta name="keywords" content="Balamurali Nambiar, bala, ba-la-murali, GitHub, AI Developer, Python Developer, Generative AI, Technology">
+    <meta name="author" content="Balamurali Nambiar (bala)">
+    <meta name="robots" content="index, follow">
+    <title>Balamurali Nambiar (bala) - AI and Technology Developer</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+    <link rel="manifest" href="manifest.json">
+    <meta name="theme-color" content="#ffbb00">
+    <link rel="sitemap" type="application/xml" title="Sitemap" href="/sitemap.xml">
+    <meta property="og:title" content="Balamurali Nambiar (bala) - AI and Technology Developer">
+    <meta property="og:description" content="Explore the latest projects and contributions from Balamurali Nambiar">
+    <meta property="og:image" content="https://r2.fivemanage.com/3nWOCwH1JwmDjPjMMZ9V3/bala.jpg">
+    <meta property="og:url" content="https://ba-la-murali.github.io">
+    <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <a href="#">
+                        <span class="highlight">bala</span>murali
+                    </a>
+                </div>
+                <div class="nav-right">
+                    <div class="theme-toggle">
+                        <button id="theme-toggle-btn" aria-label="Toggle dark mode">
+                            <i class="fas fa-moon"></i>
+                            <i class="fas fa-sun"></i>
+                        </button>
+                    </div>
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                    </div>
+                </div>
+                <ul class="nav-menu">
+                    <li><a href="#home" class="active">Home</a></li>
+                    <li><a href="#repositories">Repositories</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-title">AI and Technology <span class="highlight">Developer</span></h1>
+                <p class="animate-subtitle">Exploring AI innovation with a passion for Generative AI and creativity</p>
+                <div class="cta-buttons animate-buttons">
+                    <a href="#repositories" class="btn btn-primary">Explore Repositories</a>
+                    <a href="https://github.com/ba-la-murali" class="btn btn-secondary" target="_blank">GitHub Profile</a>
+                </div>
+                <div class="stats animate-stats">
+                    <div class="stat">
+                        <span id="repo-count" class="counter">15</span>
+                        <span class="label">Repositories</span>
+                    </div>
+                    <div class="stat">
+                        <span id="stars-count" class="counter">12</span>
+                        <span class="label">Stars</span>
+                    </div>
+                    <div class="stat">
+                        <span id="followers-count" class="counter">0</span>
+                        <span class="label">Followers</span>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-image animate-image">
+                <div class="code-window">
+                    <div class="window-header">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <pre><code class="language-javascript">// Balamurali Nambiar (bala)
+const developer = {
+  name: "Balamurali Nambiar",
+  alias: "bala",
+  skills: ["AI", "Python", "Generative AI", 
+          "Technology", "Development"],
+  passions: ["Writing", "Reading Books", 
+            "Hip-Hop", "New Ideas"],
+  github: "https://github.com/ba-la-murali"
+};
+
+function connect() {
+  return developer.github;
+}
+
+// Ready to collaborate?
+connect();</code></pre>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="repositories" class="repositories">
+        <div class="container">
+            <div class="section-header">
+                <h2>My <span class="highlight">Repositories</span></h2>
+                <p>Explore my latest public projects and contributions</p>
+            </div>
+            <div class="search-container">
+                <div class="search-box">
+                    <i class="fas fa-search"></i>
+                    <input type="text" id="repo-search" placeholder="Search repositories...">
+                </div>
+                <div class="filter-container">
+                    <select id="language-filter">
+                        <option value="all">All Languages</option>
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="HTML">HTML</option>
+                        <option value="C">C</option>
+                        <option value="PHP">PHP</option>
+                        <option value="Jupyter Notebook">Jupyter Notebook</option>
+                    </select>
+                </div>
+            </div>
+            <div class="repo-grid" id="repo-container">
+                <!-- Repositories will be dynamically loaded here -->
+                <div class="loading-spinner">
+                    <div class="spinner"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About <span class="highlight">Me</span></h2>
+                <p>AI Developer | Technology Enthusiast | Generative AI Specialist</p>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-container">
+                        <img src="https://r2.fivemanage.com/3nWOCwH1JwmDjPjMMZ9V3/bala.jpg" alt="Balamurali Nambiar" id="profile-image" onerror="this.src='images/profile-placeholder.jpg'">
+                    </div>
+                </div>
+                <div class="about-text">
+                    <h3>Balamurali Nambiar (bala)</h3>
+                    <p class="bio">
+                        I'm deeply passionate about AI and technology, especially Generative AI. Outside of my tech life, I love writing, reading books, and listening to hip-hop, always looking for new ideas and inspiration.
+                    </p>
+                    <div class="skills">
+                        <h4>Tech Stack</h4>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>AI</span>
+                            <span>Generative AI</span>
+                            <span>C</span>
+                            <span>JavaScript</span>
+                            <span>PHP</span>
+                            <span>HTML/CSS</span>
+                            <span>Machine Learning</span>
+                            <span>NLP</span>
+                            <span>Jupyter Notebook</span>
+                            <span>Data Science</span>
+                            <span>R</span>
+                            <span>Git/GitHub</span>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/ba-la-murali" target="_blank" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Get in <span class="highlight">Touch</span></h2>
+                <p>Interested in collaboration or have questions about my repositories?</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-methods">
+                    <div class="contact-method">
+                        <div class="icon">
+                            <i class="fab fa-github"></i>
+                        </div>
+                        <h3>GitHub</h3>
+                        <p>Follow me on GitHub to stay updated with my latest projects</p>
+                        <a href="https://github.com/ba-la-murali" target="_blank" class="contact-link">@ba-la-murali</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#">
+                        <span class="highlight">Balamurali</span> Nambiar (bala)
+                    </a>
+                    <p>AI Developer | Technology Enthusiast | Generative AI Specialist</p>
+                </div>
+                <div class="footer-links">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#repositories">Repositories</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-social">
+                    <h3>Connect</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/ba-la-murali" target="_blank"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; <span id="current-year"></span> Balamurali Nambiar (bala). All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/animations.js"></script>
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "Person",
+            "name": "Balamurali Nambiar",
+            "alternateName": "bala",
+            "url": "https://ba-la-murali.github.io",
+            "image": "https://r2.fivemanage.com/3nWOCwH1JwmDjPjMMZ9V3/bala.jpg",
+            "jobTitle": ["AI Developer", "Technology Enthusiast", "Generative AI Specialist"],
+            "description": "Balamurali Nambiar (bala) - AI and Technology Developer specializing in Generative AI and innovative solutions.",
+            "sameAs": ["https://github.com/ba-la-murali"]
+        }
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/serviceworker.js')
+                    .then(function(registration) {
+                        console.log('ServiceWorker registration successful with scope: ', registration.scope);
+                    })
+                    .catch(function(error) {
+                        console.log('ServiceWorker registration failed: ', error);
+                    });
+            });
+        }
+    </script>
+</body>
+</html> 

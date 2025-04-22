@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://ba-la-murali.github.io/sitemap.xml
